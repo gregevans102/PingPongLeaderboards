@@ -1,0 +1,170 @@
+#app .header {
+  background-color: white;
+  display: flex;
+  position: fixed;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  width: 100%;
+  z-index: 20; 
+  -webkit-box-shadow:0px 1px 19px 3px rgba(0,0,0,0.18);
+  box-shadow: 0px 1px 19px 3px rgba(0,0,0,0.18);
+}
+
+.header img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.ReactTable .rt-tbody .rt-td, .ReactTable .rt-thead .rt-resizable-header-content {
+  padding: 10px 15px;
+  font-size: 35px;
+  text-align: left;
+}
+
+/*fixes chrome bug with resizer*/
+#app .ReactTable .rt-resizer {
+  width: 0;
+}
+
+#app .title {
+  padding: 30px 0 20px 0;
+  text-align: center;
+  font-size: 45px;
+}
+
+.standings {
+  padding: 30px;
+}
+
+.leaderboardTitle {
+  margin:15px auto;
+  color: black;
+  font-size: 60px;
+  font-family:"Avenir Black",Helvetica,Arial,Lucida,sans-serif;
+  text-align: center;
+}
+
+#cardTable {
+  border-collapse: separate;
+}
+
+#app .ReactTable .rt-thead .rt-tr{
+  background-color: #8fc748 ;
+  color: white;
+}
+
+
+/* removes bootstrap top border */
+#playerList th {
+  border: none;
+  padding: 10px 40px
+}
+
+.listHeader th {
+  padding-left: 20px;
+}
+.listHeader {
+  background-color: #8fc748 ;
+  color: white;
+  font-size: 25px;
+}
+
+.champs .listHeader {
+  background-color: transparent;
+  color:  #8fc748 ;
+  font-size: 30px;
+}
+
+/* hides all except first 3 who are champs */
+.champs .player:nth-child(n+5){
+  display: none;
+}
+
+.champs .playerList {
+  background-color: transparent;
+}
+.champs .player {
+  margin: 20px;
+}
+.champs {
+  position: relative;
+  background-color: transparent;
+  z-index: 1;
+  max-width:1000px;
+  margin: 10px auto 0 auto;
+  background-color: transparent;
+  -webkit-box-shadow:0px 1px 19px 3px rgba(0,0,0,0.18);
+  box-shadow: 0px 1px 19px 3px rgba(0,0,0,0.18);
+  color: white;
+}
+.champTitle {
+  color: white;
+}
+
+.ReactTable {
+  -webkit-box-shadow:0px 1px 19px 3px rgba(0,0,0,0.18);
+  box-shadow: 0px 1px 19px 3px rgba(0,0,0,0.18);
+}
+
+.player, listHeader {
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#playerList td {
+  vertical-align: middle;
+  font-size: 40px;
+  padding: 10px 40px;
+}
+
+#playerList td h1{
+  font-size: 70px;
+}
+
+.playerListContainer {
+  z-index: 1;
+  max-width:1000px;
+  margin: 140px auto 0 auto;
+}
+
+.playerList {
+  position: relative;
+  background-color: transparent;
+  background-color: white;
+}
+
+.parrallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: absolute;
+  width:100%;
+  /*height: 100vh;*/
+  /*transform: translateZ(-1px) scale(2);*/
+  z-index: -1;
+  top: 0;
+}
+
+.banner {
+  background-image:url('./images/pingPongBackground.jpg');
+  background-attachment: fixed;
+  background-size:cover;
+  background-repeat: none;
+  width: 100%;
+  height: 900px;
+  z-index: -5;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -4;
+  width:100%;
+  position: absolute;
+  height: 100%;
+/*  transform: translateZ(-1px)scale(2);*/
+}
